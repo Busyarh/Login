@@ -1,0 +1,90 @@
+*{
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #14213d;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 40%;
+    padding: 2em;
+    border-radius: .2em;
+}
+
+h3{
+    color: #ff6600;
+    font-size: 1.5em;
+}
+
+h3 span{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+    margin: 1em 0;
+}
+
+input{
+    /* height: 2em; */
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: .4em;
+    padding: .6em;
+}
+
+button{
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: .55em 0;
+    border-radius: .6em;
+    border: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: .55em 0;
+    border-radius: .6em;
+    border: none;
+}
+#err{
+    display: none;
+    color: hsl(354, 100%, 66%);
+}
+/* ... your existing CSS ... */
+
+@media (max-width: 768px) {
+    main {
+      width: 80%; /* Adjust the width as needed */
+    }
+  
+    form {
+      width: 100%; /* Make the form full-width on smaller screens */
+    }
+  }
